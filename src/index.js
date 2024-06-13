@@ -4,13 +4,19 @@ addEventListener("fetch", (event) => {
 });
 
 const routes = {
-  "docker.libcuda.so": "https://registry-1.docker.io",
-  "quay.libcuda.so": "https://quay.io",
-  "gcr.libcuda.so": "https://gcr.io",
-  "k8s-gcr.libcuda.so": "https://k8s.gcr.io",
-  "k8s.libcuda.so": "https://registry.k8s.io",
-  "ghcr.libcuda.so": "https://ghcr.io",
-  "cloudsmith.libcuda.so": "https://docker.cloudsmith.io",
+  "docker.mirror.gdmuna.com": "https://registry-1.docker.io",
+  "ghcr.mirror.gdmuna.com": "https://ghcr.io",
+  "docker.mirror.rebus.zone": "https://registry-1.docker.io",
+  "ghcr.mirror.rebus.zone": "https://ghcr.io",
+  "gcr.mirror.rebus.zone": "https://gcr.io",
+  "nvcr.mirror.rebus.zone": "https://nvcr.io",
+  "quay.mirror.rebus.zone": "https://quay.io",
+  "k8s.mirror.rebus.zone": "https://registry.k8s.io",
+  "k8s-gcr.mirror.rebus.zone": "https://k8s.gcr.io",
+  "l5d.mirror.rebus.zone": "https://cr.l5d.io",
+  "elastic.mirror.rebus.zone": "https://docker.elastic.co",
+  "mcr.mirror.rebus.zone": "https://mcr.microsoft.com",
+  "oracle.mirror.rebus.zone": "https://container-registry.oracle.com"
 };
 
 function routeByHosts(host) {
